@@ -67,7 +67,7 @@ if ($.isNode()) {
             $.randomCode = random(1000000, 9999999)
             $.activityId = 'cd20220105fff606x19uj4vijetkg'
             $.activityShopId = '1000077335'
-            $.activityUrl = `https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity?activityId=cd2022n4ci22tlj1s2w3245u1mk&shareUuid=${encodeURIComponent($.authorCode)}&adsource=null&shareuserid4minipg=null&shopid=${$.activityShopId}&lng=00.000000&lat=00.000000&sid=&un_area=`
+            $.activityUrl = `https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity?activityId=cd20220105fff606x19uj4vijetkg&shareUuid=${encodeURIComponent($.authorCode)}&adsource=null&shareuserid4minipg=null&shopid=${$.activityShopId}&lng=00.000000&lat=00.000000&sid=&un_area=`
             await member();
             await $.wait(2000)
             if ($.bean > 0) {
