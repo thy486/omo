@@ -53,8 +53,8 @@ if (process.env.NO_RUSH && process.env.NO_RUSH != "") {
             authorCodeList = [
                 // '79049b1783134e4d8f0730eee2311369',
                 // 'a8ec3bb7f81a4d2993157b387993967f',
-                // '336fe9c225674104bed22b169c820190',
-                '08b5f22568bf443b8a0ddbfcadcb2662'
+                '336fe9c225674104bed22b169c820190',
+                // '08b5f22568bf443b8a0ddbfcadcb2662'
             ]
             $.bean = 0;
             $.ADID = getUUID('xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', 1);
