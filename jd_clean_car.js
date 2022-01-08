@@ -96,7 +96,7 @@ function getCart_xh(){
         }
         $.get(option, async(err, resp, data) => {
             try{
-                data = JSON.parse(getSubstr(data, "window.cartData = ", "window._PFM_TIMING"));
+                data = strToJson(getSubstr(data, "window.cartData = ", "window._PFM_TIMING"));
                 $.areaId = data.areaId;   // locationId的传值
                 $.traceId = data.traceId; // traceid的传值
                 venderCart = data.cart.venderCart;
@@ -110,6 +110,10 @@ function getCart_xh(){
             }
         });
     })
+}
+function strToJson(str){
+	var json = eval('(' + str + ')');
+	return json;
 }
 function cartFilter_xh(cartData){
     console.log("正在整理数据...")
