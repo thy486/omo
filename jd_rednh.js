@@ -57,9 +57,9 @@ let nowTime = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*
     }
   }
   if(message){
-    $.msg($.name, ``, `${message}\nhttps://u.jd.com/SCMjnig\n\n跳转到app 可查看助力情况`);
+    $.msg($.name, ``, `${message}\nhttps://u.jd.com/\n\n跳转到app 可查看助力情况`);
     if ($.isNode()){
-      await notify.sendNotify(`${$.name}`, `${message}\n\nhttps://u.jd.com/SCMjnig\n跳转到app 可查看助力情况`);
+      await notify.sendNotify(`${$.name}`, `${message}\n\nhttps://u.jd.com/\n跳转到app 可查看助力情况`);
     }
   }
 })()
@@ -101,17 +101,17 @@ async function run(){
       }
       s++
       if($.flag == 1){
-        await $.wait(parseInt(Math.random() * 5000 + 3000, 10))
+        await $.wait(500)
       }
     }while ($.flag == 1 && s < 5)
     if($.index == 1 && t == 1){
-      await $.wait(parseInt(Math.random() * 2000 + 1000, 10))
+      await $.wait(500)
       await shareUnionCoupon()
     }
     if(resMsg){
       message += `【京东账号${$.index}】${$.nickName || $.UserName}\n${resMsg}`
     }
-    await $.wait(parseInt(Math.random() * 2000 + 2000, 10))
+    await $.wait(500)
   }catch(e){
     console.log(e)
   }
